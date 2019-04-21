@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h1 id="title">Website Survey Form</h1>
+
+    <form id="survey-form" action="/action_page.php" method="post">
+      <p id="description">Please let us know your experience with our website</p>
+      <!-- User Information--->
+        <div class="row">
+          <label id="name-label" for="name">* Name:</label>
+          <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="row">
+          <label id="email-label" for="email">* Email:</label>
+          <input type="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+
+        <div class="row">
+          <label id="number-label" for="number">* Age:</label>
+          <input type="number" id="number" min="8" max="120" placeholder="Age" required>
+        </div>
+
+        <div class="row">
+          <label for="gender"> Gender:</label>
+          <select id="dropdown" name="gender">
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+        </div>
+
+
+      <!--- User Ratings 1--->
+
+      <div class="box1">
+        <div class="box1-left">
+          <label for="occupation">Please select the category that best describes your profession:</label>
+        </div>
+        <div class="box1-right">
+          <select class="options">
+            <option disabled selected>Select an option</option>
+            <option>Arts and Entertainment</option>
+            <option>Business Management and Administration</option>
+            <option>Education and Training</option>
+            <option>Finance and Accounting</option>
+            <option>Human Resources and Services</option>
+            <option>Hospitality and Tourism</option>
+            <option>Government and Public Administration</option>
+            <option>Information Technology</option>
+            <option>Manufacturing</option>
+            <option>Marketing, Sales and Services</option>
+            <option>Software Engineering</option>
+            <option>Science, Technology, Engineering and Mathematics</option>
+            <option>Transportation, Logistics and Distribution</option>
+            <option>Other Industries</option>
+          </select>
+        </div>
+      </div>
+
+      <!--- User Ratings 2--->
+      <div class="box2">
+        <div class="box2-left">
+          <label>Were you able to find what you were looking for?</label>
+        </div>
+
+        <div class="box2-right">
+          <div>
+            <input type="radio" name="radio-buttons" value="yes">Yes
+          </div>
+          <div>
+            <input type="radio" name="radio-buttons" value="no">No
+          </div>
+        </div>
+
+      </div>
+
+      <!--- User Ratings 3--->
+      <div class="box3">
+        <div class="box3-left">
+          <label>What do you like most about our website?</label>
+        </div>
+        <div class="box3-right">
+          <select class="options">
+            <option disabled selected>Select an option</option>
+            <option>How To Guide</option>
+            <option>Beginner to Advanced Tutorials</option>
+            <option>Daily Highlights</option>
+            <option>Program With realworld Projects</option>
+            <option>404 Page Game</option>
+          </select>
+        </div>
+      </div>
+
+      <!--- User Ratings 4--->
+      <div class="box4">
+        <div class="box4-left">
+          <label>How likely are you to recommend our website to others?</label>
+        </div>
+
+        <div class="box4-right">
+          <ul style="list-style-type: none;">
+            <li><input type="radio" name="radio-button" value="1">Definitely </li>
+            <li><input type="radio" name="radio-button" value="2">Maybe </li>
+            <li><input type="radio" name="radio-button" value="3">Not Sure </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--- User Ratings 5--->
+      <div class="box5">
+        <div class="box5-left">
+          <label>Topics that you would be interested to see in the future
+            (Check all that apply):</label>
+        </div>
+        <div class="box5-right">
+          <ul style="list-style-type: none;">
+            <li><input type="checkbox" name="topics" value="1">Coding Challenges </li>
+            <li><input type="checkbox" name="topics" value="2">Front-end Projects </li>
+            <li><input type="checkbox" name="topics" value="3">Back-end Projects </li>
+            <li><input type="checkbox" name="topics" value="4">Q & A Help Forum </li>
+            <li><input type="checkbox" name="topics" value="5">Mobile Apps projects </li>
+            <li><input type="checkbox" name="topics" value="6">Game Design </li>
+            <li><input type="checkbox" name="topics" value="7">Additional Courses </li>
+            <li><input type="checkbox" name="topics" value="8">Open Source Community </li>
+            <li><input type="checkbox" name="topics" value="9">Citi Meetups </li>
+          </ul>
+        </div>
+      </div>
+
+  <!-- User Comments --->
+  <div class="box6">
+    <div class="box6-left">
+      <label>Any Comments Or Suggestions?</label>
+    </div>
+    <div class="box6-right">
+      <textarea name="comment" form="survey-form" placeholder="Enter your text here..."></textarea>
+    </div>
+  </div>
+
+  <!---Submit Button-->
+  <div class="box7">
+    <button id="submit" type="submit" name="button">Submit</button>
+  </div>
+
+    </form>
+
+  </body>
+</html>
